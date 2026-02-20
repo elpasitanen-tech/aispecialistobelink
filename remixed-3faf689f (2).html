@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voortenten kopen | Obelink.nl — Buitengewoon!</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#0032A0;--blue2:#0040C8;--blueD:#00227A;--blueL:#EBF2FF;
+  --cream:#FFEBBD;--creamD:#F5D98A;--creamL:#FFFBF0;
+  --grn:#3F9F00;--grn2:#2E7A00;--grnL:#EBF7E0;
+  --red:#D0021B;--redL:#FDECEA;
+  --pur:#5B2D8E;--purL:#F0EBF8;
+  --ora:#D97000;--oraL:#FEF3EC;
+  --border:#D8E6F8;--bg:#F4F7FD;--card:#fff;
+  --txt:#1A1A2E;--mid:#374151;--gray:#6B7280;--lgray:#9CA3AF;
+  --shad:0 2px 12px rgba(0,50,160,.10);--shad2:0 8px 32px rgba(0,50,160,.18);
+}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--txt);font-size:14px;line-height:1.5}
+a{text-decoration:none;color:inherit}
+button,input,select{font-family:inherit}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--blue);border-radius:3px}
+
+/* ── PAGE TABS ── */
+#page-nav{background:var(--blueD);border-bottom:3px solid var(--cream);position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+#pn-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center}
+.pg-tab{padding:13px 22px;color:rgba(255,255,255,.7);font-size:13px;font-weight:600;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-3px;white-space:nowrap;transition:all .15s}
+.pg-tab.active{color:#fff;border-bottom-color:var(--cream);font-weight:800}
+.pg-tab:hover:not(.active){color:#fff;background:rgba(255,255,255,.07)}
+.pn-badge{margin-left:auto;background:var(--cream);color:var(--blueD);font-size:10px;font-weight:800;padding:4px 12px;border-radius:20px;white-space:nowrap;margin-right:16px}
+
+/* ── PAGES ── */
+.page{display:none}
+.page.active{display:block}
+
+/* ════════════════════════════════════════
+   PAGE 1 — VOORTENTEN SHOP
+════════════════════════════════════════ */
+
+/* TOPBAR */
+#topbar{background:#fff;border-bottom:1px solid var(--border)}
+#tb-inner{max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:38px}
+#tb-inner span{font-size:12px;color:var(--gray)}
+#tb-links{display:flex;gap:18px}
+#tb-links a{font-size:12px;color:var(--gray)}
+#tb-links a:hover{color:var(--blue)}
+
+/* HEADER */
+#hdr{background:var(--blue);padding:0}
+#hdr-inner{max-width:1280px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px}
+.logo-wrap{display:flex;flex-direction:column;flex-shrink:0;margin-right:24px;cursor:pointer}
+.logo-txt{font-size:30px;font-weight:900;color:#fff;letter-spacing:-2px;line-height:1}
+.logo-slogan{font-size:9px;color:var(--cream);letter-spacing:2px;text-transform:uppercase;font-weight:700}
+#searchbox{flex:1;max-width:560px;display:flex;border-radius:4px;overflow:hidden;border:2px solid rgba(255,255,255,.2);transition:border .2s}
+#searchbox:focus-within{border-color:var(--cream)}
+#searchbox input{flex:1;padding:10px 14px;border:none;font-size:14px;outline:none}
+#searchbox button{background:var(--grn);border:none;padding:0 18px;color:#fff;font-size:18px;cursor:pointer}
+#searchbox button:hover{background:var(--grn2)}
+#hdr-right{margin-left:auto;display:flex;align-items:center;gap:8px}
+.hbtn{display:flex;flex-direction:column;align-items:center;gap:1px;background:none;border:none;color:rgba(255,255,255,.8);font-size:11px;cursor:pointer;padding:6px 8px;border-radius:4px}
+.hbtn:hover{background:rgba(255,255,255,.12);color:#fff}
+.hbtn .i{font-size:20px}
+#cart-btn{background:var(--grn);color:#fff;border:none;border-radius:4px;padding:9px 14px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:6px}
+#cart-btn:hover{background:var(--grn2)}
+#cart-n{background:#fff;color:var(--grn);border-radius:50%;width:18px;height:18px;font-size:10px;font-weight:900;display:flex;align-items:center;justify-content:center}
+
+/* TRUST */
+#trust{background:var(--cream);border-bottom:2px solid var(--creamD)}
+#trust-inner{max-width:1280px;margin:0 auto;padding:7px 20px;display:flex;gap:0;flex-wrap:wrap;justify-content:space-between}
+.ti{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--blueD)}
+
+/* SUBNAV */
+#subnav{background:var(--blueD)}
+#sn-inner{max-width:1280px;margin:0 auto;padding:0 20px;display:flex;overflow-x:auto}
+.sni{padding:10px 15px;color:rgba(255,255,255,.75);font-size:13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;font-weight:500}
+.sni:hover{color:#fff;background:rgba(255,255,255,.07)}
+.sni.on{color:#fff;border-bottom-color:var(--cream);font-weight:700}
+
+/* BREADCRUMB */
+.breadcrumb{max-width:1280px;margin:12px auto 0;padding:0 20px;display:flex;align-items:center;gap:6px;font-size:12px;color:var(--gray)}
+.breadcrumb span{color:var(--lgray)}
+
+/* MAIN LAYOUT */
+#shop-main{max-width:1280px;margin:0 auto;padding:16px 20px 60px;display:grid;grid-template-columns:240px 1fr;gap:20px}
+@media(max-width:900px){#shop-main{grid-template-columns:1fr}#shop-sb{display:none}}
+
+/* SIDEBAR */
+.sdb-box{background:var(--card);border:1px solid var(--border);border-radius:6px;margin-bottom:14px;overflow:hidden}
+.sdb-ttl{background:var(--blue);color:#fff;padding:10px 14px;font-size:13px;font-weight:700}
+.sdb-body{padding:12px 14px}
+.fg-lbl{font-size:11px;font-weight:800;color:var(--mid);text-transform:uppercase;letter-spacing:.7px;margin-bottom:7px;margin-top:12px}
+.fg-lbl:first-child{margin-top:0}
+.fg-opt{display:flex;align-items:center;gap:7px;padding:3px 0;cursor:pointer;font-size:12px;color:var(--mid)}
+.fg-opt input{accent-color:var(--blue)}
+.fg-opt .cnt{margin-left:auto;font-size:10px;color:var(--lgray);background:var(--bg);padding:1px 5px;border-radius:3px}
+.price-wrap{display:flex;gap:6px;margin-top:6px}
+.price-wrap input{width:100%;padding:6px 8px;border:1px solid var(--border);border-radius:4px;font-size:12px;outline:none}
+.price-wrap input:focus{border-color:var(--blue)}
+.filter-btn{width:100%;background:var(--blue);color:#fff;border:none;border-radius:4px;padding:9px;font-size:13px;font-weight:700;cursor:pointer;margin-top:10px}
+.filter-btn:hover{background:var(--blue2)}
+.ai-side{background:linear-gradient(135deg,var(--blue),var(--blue2));border-radius:6px;padding:16px;color:#fff;text-align:center;margin-bottom:14px;cursor:pointer;position:relative;overflow:hidden}
+.ai-side::after{content:'🤖';position:absolute;font-size:60px;opacity:.07;right:-8px;bottom:-8px;pointer-events:none}
+.ai-side .ast{font-size:10px;font-weight:800;color:var(--cream);letter-spacing:1px;text-transform:uppercase;margin-bottom:5px}
+.ai-side h4{font-size:14px;font-weight:800;margin-bottom:5px}
+.ai-side p{font-size:11px;color:rgba(255,255,255,.75);margin-bottom:12px;line-height:1.5}
+.ai-side button{background:var(--grn);color:#fff;border:none;border-radius:4px;padding:8px 14px;font-size:12px;font-weight:700;cursor:pointer;width:100%;position:relative;z-index:1}
+
+/* HERO BANNER */
+#hero{background:linear-gradient(115deg,var(--blueD) 0%,var(--blue) 55%,#1455C0 100%);border-radius:8px;padding:30px 28px;margin-bottom:18px;position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+#hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M0 0h20v20H0zM20 20h20v20H20z'/%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+#hero .htag{display:inline-block;background:var(--cream);color:var(--blueD);font-size:10px;font-weight:800;padding:4px 10px;border-radius:3px;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+#hero h1{font-size:clamp(18px,2.8vw,28px);font-weight:900;color:#fff;line-height:1.2;margin-bottom:8px}
+#hero .hsub{color:rgba(255,255,255,.8);font-size:13px;margin-bottom:16px;max-width:460px;line-height:1.6}
+.hctas{display:flex;gap:10px;flex-wrap:wrap}
+.hcta-p{background:var(--grn);color:#fff;border:none;border-radius:4px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer}
+.hcta-p:hover{background:var(--grn2)}
+.hcta-s{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4);border-radius:4px;padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer}
+.hcta-s:hover{border-color:#fff}
+.hstats{display:flex;gap:20px;flex-wrap:wrap}
+.hs{text-align:center}
+.hs .sv{font-size:22px;font-weight:900;color:var(--cream)}
+.hs .sl{font-size:10px;color:rgba(255,255,255,.6);font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+
+/* AI BAR */
+#ai-bar{background:linear-gradient(90deg,var(--blueD),var(--blue));border-radius:6px;padding:12px 18px;margin-bottom:16px;display:flex;align-items:center;gap:12px;cursor:pointer}
+#ai-bar:hover{opacity:.92}
+#ai-bar .ai-ico{font-size:26px;flex-shrink:0}
+#ai-bar .ai-txt h4{color:#fff;font-size:13px;font-weight:800;margin-bottom:1px}
+#ai-bar .ai-txt p{color:rgba(255,255,255,.7);font-size:12px}
+#ai-bar .ai-cta{margin-left:auto;background:var(--cream);color:var(--blueD);border:none;border-radius:4px;padding:8px 16px;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap;flex-shrink:0}
+
+/* CAT TILES */
+#cat-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-bottom:16px}
+.ct{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:12px 10px;text-align:center;cursor:pointer;transition:all .15s}
+.ct:hover{border-color:var(--blue);box-shadow:var(--shad);transform:translateY(-1px)}
+.ct .ci{font-size:24px;margin-bottom:4px}
+.ct .cn{font-size:11px;font-weight:700;color:var(--mid);line-height:1.3}
+.ct .cc{font-size:10px;color:var(--lgray);margin-top:1px}
+
+/* ADVICE STRIP */
+.adv-strip{background:var(--creamL);border:1px solid var(--creamD);border-radius:6px;padding:14px 18px;margin-bottom:16px;display:flex;gap:12px;align-items:flex-start}
+.adv-strip .ai{font-size:24px;flex-shrink:0}
+.adv-strip h4{font-size:13px;font-weight:800;color:var(--blueD);margin-bottom:3px}
+.adv-strip p{font-size:12px;color:var(--mid);line-height:1.55}
+.adv-strip a{color:var(--blue);font-weight:700}
+
+/* FILTER + RESULTS BAR */
+#fbar{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;margin-bottom:12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ftag{padding:5px 11px;border-radius:20px;border:1px solid var(--border);background:#fff;font-size:12px;cursor:pointer;color:var(--mid);transition:all .12s}
+.ftag.on{background:var(--blue);color:#fff;border-color:var(--blue);font-weight:700}
+.ftag:hover:not(.on){border-color:var(--blue);color:var(--blue)}
+.fsep{width:1px;height:18px;background:var(--border)}
+.sort-sel{padding:5px 8px;border:1px solid var(--border);border-radius:4px;font-size:12px;color:var(--mid);cursor:pointer;margin-left:auto}
+#rbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+#rbar .rc{font-size:13px;color:var(--gray)}
+#rbar .rc strong{color:var(--txt)}
+.vtb{display:flex;gap:0}
+.vtb button{padding:5px 9px;border:1px solid var(--border);background:#fff;cursor:pointer;font-size:14px;color:var(--gray)}
+.vtb button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.vtb button:first-child{border-radius:4px 0 0 4px}
+.vtb button:last-child{border-radius:0 4px 4px 0}
+
+/* COMPARE BAR */
+.cmp-bar{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:10px 14px;margin-bottom:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.cmp-lbl{font-size:12px;color:var(--mid);font-weight:600;flex:1}
+.cmp-slots{display:flex;gap:6px}
+.cmp-slot{width:36px;height:36px;border:2px dashed var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--lgray)}
+.cmp-go{background:var(--blue);color:#fff;border:none;border-radius:4px;padding:7px 14px;font-size:12px;font-weight:700;cursor:pointer;opacity:.4}
+.cmp-go.active{opacity:1}
+.cmp-go.active:hover{background:var(--blue2)}
+
+/* PRODUCT GRID */
+#prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:12px;margin-bottom:20px}
+#prod-grid.lv{grid-template-columns:1fr}
+.pcard{background:var(--card);border:1px solid var(--border);border-radius:6px;overflow:hidden;transition:all .18s;display:flex;flex-direction:column;position:relative}
+.pcard:hover{border-color:var(--blue);box-shadow:var(--shad2);transform:translateY(-2px)}
+#prod-grid.lv .pcard{flex-direction:row}
+#prod-grid.lv .pcimg{width:150px;min-height:unset;border-bottom:none;border-right:1px solid #F0F4FF;flex-shrink:0}
+.pcimg{height:155px;background:linear-gradient(135deg,#EBF0FB,#D4E3FF);display:flex;align-items:center;justify-content:center;font-size:60px;position:relative;border-bottom:1px solid #EEF3FF}
+.pcb{position:absolute;top:8px;left:8px;display:flex;flex-direction:column;gap:3px}
+.bdg{font-size:10px;font-weight:800;padding:2px 7px;border-radius:3px;color:#fff}
+.bdg.sale{background:var(--red)}
+.bdg.new{background:var(--blue)}
+.bdg.best{background:#D97000}
+.bdg.air{background:var(--grn)}
+.bdg.top{background:var(--blueD)}
+.pcwish{position:absolute;top:8px;right:8px;background:#fff;border:1px solid var(--border);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px}
+.pcwish:hover{border-color:var(--red);color:var(--red)}
+.pcbody{padding:12px;flex:1;display:flex;flex-direction:column}
+.pcmerk{font-size:11px;color:var(--gray);font-weight:600;margin-bottom:2px}
+.pcname{font-size:12px;font-weight:700;line-height:1.35;margin-bottom:5px;color:var(--txt)}
+.pctype{font-size:10px;color:var(--blue);background:var(--blueL);border-radius:3px;padding:2px 6px;display:inline-block;margin-bottom:7px;font-weight:600}
+.pcstars{display:flex;align-items:center;gap:3px;margin-bottom:5px;font-size:12px}
+.s-on{color:#FFC107}.s-off{color:#DDD}
+.pcrev{font-size:10px;color:var(--lgray)}
+.pcspecs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:7px}
+.sptag{background:var(--bg);border:1px solid var(--border);font-size:10px;color:var(--mid);padding:2px 5px;border-radius:3px}
+.pcpros{border-top:1px solid #EEF3FF;padding-top:7px;margin-bottom:9px}
+.pcpro{font-size:10px;color:var(--mid);display:flex;gap:4px;margin-bottom:2px}
+.pcpro .ck{color:var(--grn);font-weight:700;flex-shrink:0}
+.pcprice-wrap{margin-top:auto}
+.pcold{font-size:11px;color:var(--lgray);text-decoration:line-through}
+.pcprice{font-size:20px;font-weight:900;color:var(--txt);line-height:1}
+.pcprice sup{font-size:12px;vertical-align:top;padding-top:2px;display:inline-block;font-weight:700}
+.pcsave{font-size:11px;color:var(--red);font-weight:700;margin-bottom:7px}
+.pcbtns{display:flex;gap:6px}
+.pccart{flex:1;background:var(--grn);color:#fff;border:none;border-radius:4px;padding:8px;font-size:11px;font-weight:700;cursor:pointer}
+.pccart:hover{background:var(--grn2)}
+.pcdet{flex:1;background:#fff;color:var(--blue);border:1px solid var(--blue);border-radius:4px;padding:8px;font-size:11px;font-weight:700;cursor:pointer}
+.pcdet:hover{background:var(--blue);color:#fff}
+
+/* PAGINATION */
+.pag{display:flex;gap:4px;justify-content:center;margin-top:16px}
+.pag button{padding:7px 13px;border:1px solid var(--border);background:#fff;border-radius:4px;font-size:13px;cursor:pointer;color:var(--mid)}
+.pag button.on{background:var(--blue);color:#fff;border-color:var(--blue);font-weight:700}
+.pag button:hover:not(.on){border-color:var(--blue);color:var(--blue)}
+
+/* ════════════════════════════════════════
+   PAGE 2 — AI STRATEGIE
+════════════════════════════════════════ */
+#strat-page{background:var(--bg)}
+
+/* STRAT NAV */
+#strat-nav{background:var(--blue);position:sticky;top:46px;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+#sn2-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center}
+.snl{padding:13px 14px;color:rgba(255,255,255,.7);font-size:13px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;text-decoration:none;display:block;margin-bottom:-3px}
+.snl:hover,.snl.on{color:#fff;border-bottom-color:var(--cream)}
+.sn-badge{margin-left:auto;background:var(--cream);color:var(--blueD);font-size:10px;font-weight:800;padding:4px 12px;border-radius:20px;margin-right:0}
+
+/* STRAT HERO */
+.shero{background:linear-gradient(135deg,var(--blueD) 0%,var(--blue) 50%,#0040C8 100%);padding:72px 24px 0;position:relative;overflow:hidden}
+.shero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E")}
+.shero-inner{max-width:1100px;margin:0 auto;position:relative}
+.stag{display:inline-block;background:rgba(255,235,189,.2);border:1px solid rgba(255,235,189,.5);color:var(--cream);font-size:11px;font-weight:800;padding:5px 14px;border-radius:20px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px}
+.shero h1{font-size:clamp(26px,4.5vw,48px);font-weight:900;color:#fff;line-height:1.15;margin-bottom:14px}
+.shero h1 span{color:var(--cream)}
+.shero .ssub{color:rgba(255,255,255,.75);font-size:15px;max-width:600px;margin-bottom:30px;line-height:1.7}
+.sstats{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:36px}
+.ss{text-align:center}
+.ss .sv{font-size:26px;font-weight:900;color:#fff}
+.ss .sl{font-size:11px;color:rgba(255,255,255,.6);font-weight:600;text-transform:uppercase;letter-spacing:.7px}
+.stl{display:flex;border-radius:10px 10px 0 0;overflow:hidden;gap:3px;margin-top:16px}
+.stlp{flex:1;padding:14px;text-align:center;cursor:pointer}
+.stlp .pn{font-size:10px;font-weight:700;opacity:.7;letter-spacing:1px;margin-bottom:3px}
+.stlp .pt{font-weight:800;font-size:13px;color:#fff}
+.stlp .pd{font-size:10px;opacity:.6;margin-top:2px}
+
+/* STRAT MAIN */
+#strat-main{max-width:1100px;margin:0 auto;padding:48px 24px 80px}
+
+/* SECTION */
+.ssec{margin-bottom:68px;scroll-margin-top:90px}
+.shdr{display:flex;align-items:flex-start;gap:14px;margin-bottom:26px}
+.sico{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff;flex-shrink:0}
+.sttl h2{font-size:21px;font-weight:900;color:var(--txt)}
+.sttl p{font-size:13px;color:var(--gray);margin-top:2px}
+
+/* WHY CARDS */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:28px}
+.why-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;position:relative;overflow:hidden}
+.why-card .wci{font-size:26px;margin-bottom:8px}
+.why-card h4{font-weight:800;font-size:13px;margin-bottom:5px}
+.why-card p{font-size:12px;color:var(--gray);line-height:1.6}
+
+/* TIMELINE */
+.tl-wrap{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px}
+.tl-head{font-size:13px;font-weight:800;margin-bottom:5px}
+.tl-sub{font-size:12px;color:var(--gray);margin-bottom:24px}
+.tl{position:relative;padding-left:36px}
+.tl::before{content:'';position:absolute;left:14px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--ora),var(--blue2),var(--pur))}
+.tli{position:relative;margin-bottom:24px}
+.tl-dot{position:absolute;left:-36px;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#fff;border:3px solid var(--bg);z-index:1}
+.tlc{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.tlc .tcp{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:3px}
+.tlc .tct{font-size:13px;font-weight:800;color:var(--txt);margin-bottom:4px}
+.tlc .tcd{font-size:11px;color:var(--gray);line-height:1.55}
+.kpis{display:flex;gap:7px;margin-top:9px;flex-wrap:wrap}
+.kpi{background:#fff;border:1px solid var(--border);border-radius:5px;padding:3px 9px;font-size:11px;font-weight:700;color:var(--txt)}
+.kpi em{font-weight:400;color:var(--gray);font-style:normal}
+
+/* PHASE GRID */
+.pg{display:grid;gap:0;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.prow{display:grid;grid-template-columns:190px 1fr}
+.prow+.prow{border-top:1px solid var(--border)}
+@media(max-width:640px){.prow{grid-template-columns:1fr}}
+.pleft{padding:22px 18px;display:flex;flex-direction:column;gap:5px}
+.pleft .pln{font-size:10px;font-weight:800;letter-spacing:1.5px;opacity:.8;text-transform:uppercase}
+.pleft .plt{font-size:17px;font-weight:900;color:#fff;line-height:1.2}
+.pleft .pld{font-size:11px;color:rgba(255,255,255,.6);margin-top:2px}
+.pleft .plg{font-size:11px;color:rgba(255,255,255,.85);background:rgba(255,255,255,.12);padding:5px 8px;border-radius:6px;margin-top:6px;line-height:1.4}
+.pright{background:var(--card);padding:22px 26px}
+.pitems{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.pit{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:11px 13px}
+.pit .pii{font-size:16px;margin-bottom:5px}
+.pit .piti{font-size:12px;font-weight:700;color:var(--txt);margin-bottom:2px}
+.pit .pitd{font-size:11px;color:var(--gray);line-height:1.5}
+.pit .pimp{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;margin-top:5px}
+
+/* FLYWHEEL */
+.fw-wrap{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+@media(max-width:700px){.fw-wrap{grid-template-columns:1fr}}
+.fw-vis{position:relative;width:100%;max-width:320px;margin:0 auto;aspect-ratio:1}
+.fw-ring{position:absolute;inset:0;border-radius:50%;background:var(--blueL);opacity:.3}
+.fw-ctr{position:absolute;inset:25%;background:linear-gradient(135deg,var(--blue),var(--pur));border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px;z-index:3}
+.fw-ctr .fci{font-size:20px}
+.fw-ctr .fct{font-size:10px;font-weight:800;color:#fff;line-height:1.2;margin-top:2px}
+.fw-node{position:absolute;background:#fff;border-radius:8px;padding:5px 8px;text-align:center;border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.08);z-index:2}
+.fn-i{font-size:14px}
+.fn-t{font-size:9px;font-weight:700;color:var(--txt);white-space:nowrap;margin-top:1px}
+.fl-list{display:flex;flex-direction:column;gap:12px}
+.fli{display:flex;gap:12px;align-items:flex-start}
+.fl-n{width:26px;height:26px;border-radius:50%;background:var(--blue);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.fl-tt{font-size:12px;font-weight:700;color:var(--txt);margin-bottom:1px}
+.fl-d{font-size:11px;color:var(--gray);line-height:1.5}
+
+/* ARCH */
+.arch{display:grid;gap:8px}
+.al{border-radius:8px;overflow:hidden;border:1px solid var(--border)}
+.al-hdr{display:flex;align-items:center;gap:10px;padding:11px 16px;cursor:pointer;user-select:none}
+.al-ico{font-size:16px}
+.al-name{font-size:13px;font-weight:700;color:#fff;flex:1}
+.al-tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;background:rgba(255,255,255,.2);color:#fff}
+.al-body{background:var(--card);padding:12px 16px;display:none;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:7px}
+.al-body.open{display:grid}
+.alc{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:9px 11px}
+.alc-t{font-size:11px;font-weight:700;color:var(--txt);margin-bottom:2px}
+.alc-d{font-size:10px;color:var(--gray);line-height:1.5}
+
+/* ROI */
+.roi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:20px}
+.roic{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:5px}
+.roic .ri{font-size:22px}
+.roic .rm{font-size:24px;font-weight:900}
+.roic .rl{font-size:12px;font-weight:700;color:var(--txt)}
+.roic .rd{font-size:11px;color:var(--gray);line-height:1.5}
+.roic .rf{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;display:inline-block;width:fit-content;margin-top:3px}
+
+/* BAR CHART */
+.bchart{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:22px}
+.bct{font-size:13px;font-weight:800;margin-bottom:16px}
+.bcr{margin-bottom:12px}
+.bctop{display:flex;justify-content:space-between;margin-bottom:4px}
+.bcl{font-size:12px;font-weight:600;color:var(--txt)}
+.bcv{font-size:11px;font-weight:700}
+.bck{height:9px;background:var(--bg);border-radius:5px;overflow:hidden;border:1px solid var(--border)}
+.bcf{height:100%;border-radius:5px}
+
+/* CONVICTION */
+.conv{background:linear-gradient(135deg,var(--blueD),var(--blue));border-radius:14px;padding:44px;text-align:center;position:relative;overflow:hidden}
+.conv::before{content:'🤖';position:absolute;font-size:180px;opacity:.04;top:-20px;right:-20px;line-height:1;pointer-events:none}
+.conv .ctag{display:inline-block;background:rgba(255,235,189,.25);border:1px solid rgba(255,235,189,.5);color:var(--cream);font-size:11px;font-weight:800;padding:5px 14px;border-radius:20px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px}
+.conv h2{font-size:clamp(20px,3.5vw,34px);font-weight:900;color:#fff;margin-bottom:12px;line-height:1.2}
+.conv p{color:rgba(255,255,255,.75);font-size:14px;max-width:580px;margin:0 auto 24px;line-height:1.7}
+.cpills{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:24px}
+.cpill{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;padding:5px 13px;border-radius:20px;font-size:12px;font-weight:600}
+.cauthor{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:10px 16px}
+.cav{width:34px;height:34px;background:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px}
+.can{font-size:13px;font-weight:700;color:#fff}
+.car{font-size:11px;color:rgba(255,255,255,.6)}
+
+/* DIVIDER */
+.divider{height:1px;background:var(--border);margin:48px 0}
+
+/* ════════════════════════════════════════
+   CHAT OVERLAY
+════════════════════════════════════════ */
+#chat-overlay{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+#chat-bubble{width:56px;height:56px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 20px rgba(0,50,160,.45);transition:transform .2s;position:relative}
+#chat-bubble:hover{transform:scale(1.08)}
+#chat-bubble .cbi{font-size:24px}
+#chat-bubble .cbp{position:absolute;top:0;right:0;width:16px;height:16px;background:var(--grn);border-radius:50%;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:800;color:#fff}
+#chat-win{width:375px;background:var(--card);border-radius:12px;box-shadow:0 8px 40px rgba(0,50,160,.28);overflow:hidden;display:none;flex-direction:column;max-height:570px}
+#chat-win.open{display:flex}
+#cwh{background:var(--blue);padding:12px 14px;display:flex;align-items:center;gap:9px}
+#cwav{width:36px;height:36px;background:rgba(255,255,255,.14);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.cwn{color:#fff;font-weight:800;font-size:13px}
+.cws{color:rgba(255,255,255,.6);font-size:11px;display:flex;align-items:center;gap:4px}
+.dlive{width:6px;height:6px;background:#4ADE80;border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+#cwclose{margin-left:auto;background:none;border:none;color:rgba(255,255,255,.7);font-size:20px;cursor:pointer;padding:2px 6px;border-radius:4px}
+#cwclose:hover{background:rgba(255,255,255,.15);color:#fff}
+
+/* CAPS BAR */
+#cwcaps{background:var(--creamL);border-bottom:1px solid var(--creamD);padding:7px 12px;display:flex;gap:5px;overflow-x:auto}
+.cap{background:#fff;border:1px solid var(--creamD);border-radius:12px;padding:3px 9px;font-size:10px;font-weight:700;color:var(--blueD);white-space:nowrap;cursor:pointer}
+.cap:hover{background:var(--cream)}
+
+#cwmsgs{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;min-height:280px;max-height:330px}
+.mrow{display:flex;gap:6px;align-items:flex-end}
+.mrow.u{justify-content:flex-end}
+.mav{width:24px;height:24px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.bub{max-width:82%;padding:8px 12px;font-size:13px;line-height:1.55;border-radius:14px;white-space:pre-wrap}
+.bub.bot{background:#fff;border:1px solid var(--border);border-radius:14px 14px 14px 3px;color:var(--txt)}
+.bub.usr{background:var(--blue);color:#fff;border-radius:14px 14px 3px 14px}
+.typbub{display:flex;gap:4px;padding:9px 12px;background:#fff;border:1px solid var(--border);border-radius:14px 14px 14px 3px}
+.tdot{width:7px;height:7px;border-radius:50%;background:var(--blue);animation:td 1.2s ease infinite}
+.tdot:nth-child(2){animation-delay:.2s}
+.tdot:nth-child(3){animation-delay:.4s}
+@keyframes td{0%,80%,100%{transform:scale(.55);opacity:.35}40%{transform:scale(1);opacity:1}}
+
+#cwq{padding:7px 12px;border-top:1px solid var(--border);display:flex;gap:5px;flex-wrap:wrap;display:none}
+.qr{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:4px 10px;font-size:11px;color:var(--blue);cursor:pointer;font-weight:600}
+.qr:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+#cwinput{padding:9px 12px;border-top:1px solid var(--border);display:flex;gap:7px;display:none}
+#cwi{flex:1;padding:8px 12px;border-radius:20px;border:1.5px solid var(--border);font-size:13px;outline:none}
+#cwi:focus{border-color:var(--blue)}
+#cws{background:var(--grn);color:#fff;border:none;border-radius:50%;width:34px;height:34px;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+#cws:hover{background:var(--grn2)}
+#cws:disabled{background:var(--lgray);cursor:not-allowed}
+
+/* WELCOME */
+#cwwel{padding:18px 14px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+#cwwel .wi{font-size:42px}
+#cwwel h3{font-size:15px;font-weight:800}
+#cwwel p{font-size:12px;color:var(--gray);max-width:280px;line-height:1.6}
+#cwwel .wstart{background:var(--grn);color:#fff;border:none;border-radius:4px;padding:10px 22px;font-size:13px;font-weight:700;cursor:pointer;width:100%}
+.wqbtns{display:flex;flex-wrap:wrap;gap:5px;justify-content:center}
+.wq{background:#fff;border:1px solid var(--border);border-radius:12px;padding:4px 10px;font-size:11px;color:var(--blue);cursor:pointer;font-weight:600}
+.wq:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+/* FOOTER */
+#footer{background:#fff;border-top:1px solid var(--border);padding:36px 20px}
+#ft-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:24px}
+.ftcol h4{font-size:12px;font-weight:800;color:var(--blueD);margin-bottom:10px;padding-bottom:6px;border-bottom:2px solid var(--cream)}
+.ftcol a{display:block;font-size:12px;color:var(--gray);margin-bottom:4px}
+.ftcol a:hover{color:var(--blue)}
+#fbar{background:var(--blueD);padding:14px 20px}
+#fb-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+#fb-inner .fl{font-size:12px;color:rgba(255,255,255,.55)}
+.pays{display:flex;gap:6px}
+.pay{background:#fff;border-radius:3px;padding:2px 7px;font-size:11px;font-weight:700;color:var(--blueD)}
+</style>
+</head>
+<body>
+
+<!-- ════ PAGE NAVIGATION ════ -->
+<div id="page-nav">
+  <div id="pn-inner">
+    <div class="pg-tab active" onclick="showPage('shop',this)">🏕️ Voortenten Shop</div>
+    <div class="pg-tab" onclick="showPage('strat',this)">🚀 AI Strategie 2025–2028</div>
+    <span class="pn-badge">AI Specialist Demo · Obelink</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════
+     PAGE 1: VOORTENTEN SHOP
+════════════════════════════ -->
+<div id="page-shop" class="page active">
+
+  <!-- TOPBAR -->
+  <div id="topbar">
+    <div id="tb-inner">
+      <div id="tb-links">
+        <a href="#">Klantenservice</a>
+        <a href="#">Winkel & openingstijden</a>
+        <a href="#">Advies & blogs</a>
+        <a href="#">Verlanglijst</a>
+      </div>
+      <span>📍 Megastore Winterswijk · Ma–Za 9:00–18:00 · Gratis verzending v.a. €50,-</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div id="hdr">
+    <div id="hdr-inner">
+      <div class="logo-wrap" onclick="showPage('shop',document.querySelector('.pg-tab'))">
+        <div class="logo-txt">obelink</div>
+        <div class="logo-slogan">buitengewoon!</div>
+      </div>
+      <div id="searchbox">
+        <input type="text" id="search-inp" placeholder="Waar ben je naar op zoek?" onkeydown="if(event.key==='Enter')srch()">
+        <button onclick="srch()">🔍</button>
+      </div>
+      <div id="hdr-right">
+        <button class="hbtn"><span class="i">🤍</span>Verlanglijst</button>
+        <button class="hbtn"><span class="i">👤</span>Inloggen</button>
+        <button id="cart-btn">🛒 Winkelwagen <span id="cart-n">0</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST -->
+  <div id="trust">
+    <div id="trust-inner">
+      <div class="ti"><span>✓</span> Laagste-prijs-garantie</div>
+      <div class="ti"><span>🚚</span> Gratis verzending v.a. €50,-</div>
+      <div class="ti"><span>🏪</span> 72.500 m² Megastore Winterswijk</div>
+      <div class="ti"><span>↩️</span> 30 dagen bedenktijd</div>
+      <div class="ti"><span>⭐</span> Al 65 jaar kampeerspecialist</div>
+    </div>
+  </div>
+
+  <!-- SUBNAV -->
+  <div id="subnav">
+    <div id="sn-inner">
+      <div class="sni">Alle categorieën</div>
+      <div class="sni">Acties</div>
+      <div class="sni">Tenten</div>
+      <div class="sni on">Voortenten</div>
+      <div class="sni">Luifels</div>
+      <div class="sni">Kampeerartikelen</div>
+      <div class="sni">Caravan & camper</div>
+      <div class="sni">Kampeermeubelen</div>
+    </div>
+  </div>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="#">Home</a><span>›</span><span style="color:var(--blue);font-weight:600">Voortenten</span>
+    <span style="margin-left:auto;color:var(--blue);font-size:12px;font-weight:600;cursor:pointer" onclick="openChat()">🤖 AI Assistent beschikbaar</span>
+  </div>
+
+  <!-- MAIN -->
+  <div id="shop-main">
+
+    <!-- SIDEBAR -->
+    <div id="shop-sb">
+      <div class="ai-side" onclick="openChat()">
+        <div class="ast">🤖 AI Powered</div>
+        <h4>Welke voortent past bij jou?</h4>
+        <p>Onze AI-expert stelt je 2 gerichte vragen en vindt jouw perfecte voortent in 60 seconden.</p>
+        <button>Start gratis advies →</button>
+      </div>
+      <div class="sdb-box">
+        <div class="sdb-ttl">🔧 Filters</div>
+        <div class="sdb-body">
+          <div class="fg-lbl">Type voortent</div>
+          <label class="fg-opt"><input type="checkbox"> Volledige voortent <span class="cnt">124</span></label>
+          <label class="fg-opt"><input type="checkbox" checked> Opblaasbare voortent <span class="cnt">67</span></label>
+          <label class="fg-opt"><input type="checkbox"> Reisvoortent <span class="cnt">43</span></label>
+          <label class="fg-opt"><input type="checkbox"> 4-seizoenen <span class="cnt">28</span></label>
+          <label class="fg-opt"><input type="checkbox"> Deeltent <span class="cnt">35</span></label>
+          <label class="fg-opt"><input type="checkbox"> Camperten <span class="cnt">52</span></label>
+          <div class="fg-lbl">Merk</div>
+          <label class="fg-opt"><input type="checkbox"> Obelink <span class="cnt">89</span></label>
+          <label class="fg-opt"><input type="checkbox"> Isabella <span class="cnt">45</span></label>
+          <label class="fg-opt"><input type="checkbox"> Dometic <span class="cnt">38</span></label>
+          <label class="fg-opt"><input type="checkbox"> Brand <span class="cnt">22</span></label>
+          <label class="fg-opt"><input type="checkbox"> Walker <span class="cnt">19</span></label>
+          <div class="fg-lbl">Geschikt voor</div>
+          <label class="fg-opt"><input type="checkbox"> Caravan <span class="cnt">186</span></label>
+          <label class="fg-opt"><input type="checkbox"> Camper <span class="cnt">94</span></label>
+          <label class="fg-opt"><input type="checkbox"> Kampeerbus <span class="cnt">41</span></label>
+          <div class="fg-lbl">Prijs</div>
+          <div class="price-wrap"><input type="number" placeholder="Van €"><input type="number" placeholder="Tot €"></div>
+          <div class="fg-lbl">Diepte</div>
+          <label class="fg-opt"><input type="checkbox"> Tot 200 cm <span class="cnt">28</span></label>
+          <label class="fg-opt"><input type="checkbox"> 200–300 cm <span class="cnt">76</span></label>
+          <label class="fg-opt"><input type="checkbox"> 300–400 cm <span class="cnt">94</span></label>
+          <label class="fg-opt"><input type="checkbox"> 400+ cm <span class="cnt">32</span></label>
+          <button class="filter-btn">Filters toepassen</button>
+        </div>
+      </div>
+      <div class="sdb-box">
+        <div class="sdb-ttl">💡 Keuzegids</div>
+        <div class="sdb-body">
+          <p style="font-size:12px;color:var(--gray);line-height:1.6;margin-bottom:10px">Twijfel je welke voortent bij jouw caravan past? Lees onze gratis keuzegids.</p>
+          <a href="#" style="display:block;background:var(--blue);color:#fff;text-align:center;border-radius:4px;padding:8px;font-size:12px;font-weight:700">Lees de keuzegids →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div id="shop-content">
+
+      <!-- HERO -->
+      <div id="hero">
+        <div>
+          <div class="htag">🏕️ Europa's grootste assortiment</div>
+          <h1>Voortenten voor elk kampeeravontuur</h1>
+          <div class="hsub">Van lichte reisvoortent tot robuuste 4-seizoenstent. Obelink heeft 380+ modellen — altijd met laagste-prijs-garantie.</div>
+          <div class="hctas">
+            <button class="hcta-p" onclick="openChat()">🤖 AI Advies — Gratis</button>
+            <button class="hcta-s" onclick="document.getElementById('prod-grid').scrollIntoView({behavior:'smooth'})">Bekijk alle voortenten ↓</button>
+          </div>
+        </div>
+        <div class="hstats">
+          <div class="hs"><div class="sv">380+</div><div class="sl">Modellen</div></div>
+          <div class="hs"><div class="sv">6</div><div class="sl">Topmerken</div></div>
+          <div class="hs"><div class="sv">65jr</div><div class="sl">Ervaring</div></div>
+        </div>
+      </div>
+
+      <!-- AI BAR -->
+      <div id="ai-bar" onclick="openChat()">
+        <div class="ai-ico">🤖</div>
+        <div class="ai-txt">
+          <h4>Niet zeker welke voortent bij jouw caravan of camper past?</h4>
+          <p>AI-expert kent het volledige Obelink assortiment · omloopmaat · materiaaladvies · top-3 aanbeveling in 60 sec.</p>
+        </div>
+        <button class="ai-cta">Start AI-advies →</button>
+      </div>
+
+      <!-- CATEGORY TILES -->
+      <div id="cat-tiles">
+        <div class="ct"><div class="ci">🏕️</div><div class="cn">Volledige voortenten</div><div class="cc">124 producten</div></div>
+        <div class="ct"><div class="ci">💨</div><div class="cn">Opblaasbaar</div><div class="cc">67 producten</div></div>
+        <div class="ct"><div class="ci">🎒</div><div class="cn">Reisvoortenten</div><div class="cc">43 producten</div></div>
+        <div class="ct"><div class="ci">❄️</div><div class="cn">4-Seizoenen</div><div class="cc">28 producten</div></div>
+        <div class="ct"><div class="ci">🚐</div><div class="cn">Campertenten</div><div class="cc">52 producten</div></div>
+        <div class="ct"><div class="ci">🚌</div><div class="cn">Bustenten</div><div class="cc">31 producten</div></div>
+        <div class="ct"><div class="ci">⭐</div><div class="cn">Tweedekans</div><div class="cc">44 producten</div></div>
+      </div>
+
+      <!-- ADVICE STRIP -->
+      <div class="adv-strip">
+        <div class="ai">📏</div>
+        <div>
+          <h4>Meten is weten — hoe bepaal je je omloopmaat?</h4>
+          <p>Meet van de grond, via de volledige caravanrail (binnenkant), terug tot de grond. Dit is je omloopmaat — de belangrijkste maat bij het kiezen van een voortent. <a href="#">Lees onze gratis meethandleiding →</a></p>
+        </div>
+      </div>
+
+      <!-- FILTER BAR -->
+      <div id="fbar">
+        <span style="font-size:12px;font-weight:700;color:var(--mid)">Snel:</span>
+        <button class="ftag on" onclick="filt('Alle',this)">Alle</button>
+        <button class="ftag" onclick="filt('Opblaasbaar',this)">💨 Opblaasbaar</button>
+        <button class="ftag" onclick="filt('Caravan',this)">🚐 Caravan</button>
+        <button class="ftag" onclick="filt('Camper',this)">🏠 Camper</button>
+        <button class="ftag" onclick="filt('Reizen',this)">🎒 Reizen</button>
+        <button class="ftag" onclick="filt('Seizoen',this)">📅 Seizoen</button>
+        <button class="ftag" onclick="filt('4-seizoenen',this)">❄️ 4-Seizoenen</button>
+        <button class="ftag" onclick="filt('Aanbieding',this)">🔥 Aanbieding</button>
+        <div class="fsep"></div>
+        <select class="sort-sel"><option>Aanbevolen</option><option>Prijs: laag→hoog</option><option>Prijs: hoog→laag</option><option>Beoordeling</option><option>Nieuwste</option></select>
+      </div>
+
+      <!-- RESULTS BAR -->
+      <div id="rbar">
+        <div class="rc"><strong id="pcnt">380</strong> voortenten gevonden</div>
+        <div class="vtb">
+          <button class="on" onclick="setView('g',this)">⊞</button>
+          <button onclick="setView('l',this)">☰</button>
+        </div>
+      </div>
+
+      <!-- COMPARE BAR -->
+      <div class="cmp-bar">
+        <div class="cmp-lbl">⚖️ Selecteer 2–3 producten om te vergelijken</div>
+        <div class="cmp-slots"><div class="cmp-slot">＋</div><div class="cmp-slot">＋</div><div class="cmp-slot">＋</div></div>
+        <button class="cmp-go">Vergelijk</button>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div id="prod-grid"></div>
+
+      <div class="pag">
+        <button>‹</button><button class="on">1</button><button>2</button><button>3</button><button>4</button><button>…</button><button>19</button><button>›</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <div id="ft-inner">
+      <div class="ftcol"><h4>Voortenten</h4><a href="#">Alle voortenten</a><a href="#">Opblaasbare voortenten</a><a href="#">4-seizoenen</a><a href="#">Reisvoortenten</a><a href="#">Campertenten</a><a href="#">Tweedekans</a></div>
+      <div class="ftcol"><h4>Merken</h4><a href="#">Obelink voortenten</a><a href="#">Isabella</a><a href="#">Dometic</a><a href="#">Brand</a><a href="#">Walker</a><a href="#">Hypercamp</a></div>
+      <div class="ftcol"><h4>Advies</h4><a href="#">Keuzegids voortenten</a><a href="#">Omloopmaat berekenen</a><a href="#">Opblaas vs stokken</a><a href="#">Voortent onderhoud</a><a href="#">Klantenservice</a></div>
+      <div class="ftcol"><h4>Obelink</h4><a href="#">Over ons</a><a href="#">Megastore Winterswijk</a><a href="#">Openingstijden</a><a href="#">Membercard</a><a href="#">Vacatures</a></div>
+    </div>
+  </div>
+  <div id="fbar"><div id="fb-inner"><span class="fl">© 2025 Obelink B.V. — Buitengewoon!</span><div class="pays"><span class="pay">iDEAL</span><span class="pay">VISA</span><span class="pay">MC</span><span class="pay">PayPal</span></div></div></div>
+
+</div><!-- /page-shop -->
+
+<!-- ════════════════════════════
+     PAGE 2: AI STRATEGIE
+════════════════════════════ -->
+<div id="page-strat" class="page">
+
+  <!-- STRAT NAV -->
+  <div id="strat-nav">
+    <div id="sn2-inner">
+      <a class="snl on" href="#swhy">💡 Fundament</a>
+      <a class="snl" href="#sfases">⚡ 3 Fases</a>
+      <a class="snl" href="#sfly">🔄 Data Flywheel</a>
+      <a class="snl" href="#sarch">🧠 AI-Model</a>
+      <a class="snl" href="#sroi">📈 Impact & ROI</a>
+      <span class="sn-badge">Sollicitatie Demo · AI Specialist</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="shero">
+    <div class="shero-inner">
+      <div class="stag">Strategische AI Routekaart · Obelink 2025–2028</div>
+      <h1>Van Kampeerdata naar<br><span>Eigen Obelink AI-Model</span></h1>
+      <p class="ssub">Een chronologische, 3-fasen strategie die begint met bewezen quick wins — en eindigt met een volledig eigen, fine-tuned AI-model dat niemand kan kopiëren.</p>
+      <div class="sstats">
+        <div class="ss"><div class="sv">36</div><div class="sl">Maanden roadmap</div></div>
+        <div class="ss"><div class="sv">3</div><div class="sl">Duidelijke fases</div></div>
+        <div class="ss"><div class="sv">+23%</div><div class="sl">Conversie-target</div></div>
+        <div class="ss"><div class="sv">70%</div><div class="sl">Service auto.</div></div>
+        <div class="ss"><div class="sv">8</div><div class="sl">Talen (fase 3)</div></div>
+      </div>
+      <div class="stl">
+        <div class="stlp" style="background:#D97000" onclick="document.getElementById('swhy').scrollIntoView({behavior:'smooth'})">
+          <div class="pn">Fase 1</div><div class="pt">Fundament</div><div class="pd">Maand 1–6</div>
+        </div>
+        <div class="stlp" style="background:#0040C8" onclick="document.getElementById('sfases').scrollIntoView({behavior:'smooth'})">
+          <div class="pn">Fase 2</div><div class="pt">Intelligentie</div><div class="pd">Maand 7–18</div>
+        </div>
+        <div class="stlp" style="background:var(--pur)" onclick="document.getElementById('sarch').scrollIntoView({behavior:'smooth'})">
+          <div class="pn">Fase 3</div><div class="pt">Eigen AI-Model</div><div class="pd">Maand 19–36</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STRAT MAIN -->
+  <div id="strat-main">
+
+    <!-- WHY -->
+    <section class="ssec" id="swhy">
+      <div class="shdr">
+        <div class="sico" style="background:var(--blue)">💡</div>
+        <div class="sttl"><h2>De Unieke Positie van Obelink</h2><p>Waarom Obelink ideaal geplaatst is voor een eigen AI-model — en waarom nu het juiste moment is.</p></div>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" style="border-left:4px solid var(--ora)"><div class="wci">🏕️</div><h4>65 jaar kampeerkennis</h4><p>Obelink heeft een unieke kennisbasis opgebouwd die geen enkele concurrent kan evenaren. Dit is de perfecte trainingsset voor een domeinspecifiek AI-model.</p></div>
+        <div class="why-card" style="border-left:4px solid var(--grn)"><div class="wci">📦</div><h4>Europa's grootste assortiment</h4><p>100.000+ producten met gestructureerde specs, reviews en aankoopdata. Elke interactie levert waardevolle trainingsdata op voor het toekomstige eigen model.</p></div>
+        <div class="why-card" style="border-left:4px solid var(--blue)"><div class="wci">💬</div><h4>Miljoenen klantinteracties</h4><p>Seizoensgebonden kopersgedrag, terugkerende klanten, zoekpatronen — data die externe AI-aanbieders nooit zullen hebben.</p></div>
+        <div class="why-card" style="border-left:4px solid var(--pur)"><div class="wci">🔒</div><h4>Privacy & datasoevereiniteit</h4><p>Eigen model = klantdata verlaat nooit de Obelink-infrastructuur. Volledig GDPR-compliant, geen afhankelijkheid van OpenAI of Google.</p></div>
+      </div>
+      <div class="tl-wrap">
+        <div class="tl-head">📅 Chronologische Implementatielijn</div>
+        <div class="tl-sub">Elke stap bouwt voort op de vorige. Geen fase kan worden overgeslagen — dit is een gefundeerde, stap-voor-stap opbouw naar het eindmodel.</div>
+        <div class="tl">
+          <div class="tli"><div class="tl-dot" style="background:var(--ora)">1</div><div class="tlc" style="border-left:3px solid var(--ora)"><div class="tcp" style="color:var(--ora)">Maand 1 · Fundament</div><div class="tct">Data-audit & infrastructuur opzetten</div><div class="tcd">Inventarisatie van alle beschikbare datastromen: productsdata, klantreviews, chatlogboeken, zoekgedrag. Datalakehouse inrichten (bijv. Databricks of Snowflake). Dit is de absolute basis — zonder schone, gestructureerde data is geen enkel AI-project haalbaar.</div><div class="kpis"><span class="kpi">Deliverable <em>· Datamap</em></span><span class="kpi">Datastatus <em>· 100% inzicht</em></span></div></div></div>
+          <div class="tli"><div class="tl-dot" style="background:var(--ora)">2</div><div class="tlc" style="border-left:3px solid var(--ora)"><div class="tcp" style="color:var(--ora)">Maand 2–3 · Fundament</div><div class="tct">AI Chatbot & semantisch zoeken live</div><div class="tcd">Eerste klantgerichte AI-toepassing: een voortentadviseur chatbot (zoals deze demo) via de Anthropic/Claude API. Parallel: semantisch zoeken op obelink.nl zodat klanten contextueel kunnen zoeken. Meet direct conversie-impact.</div><div class="kpis"><span class="kpi">Conversie <em>· +8–12% target</em></span><span class="kpi">NPS <em>· baseline meting</em></span></div></div></div>
+          <div class="tli"><div class="tl-dot" style="background:var(--ora)">3</div><div class="tlc" style="border-left:3px solid var(--ora)"><div class="tcp" style="color:var(--ora)">Maand 4–6 · Fundament</div><div class="tct">AI-gegenereerde productcontent & SEO</div><div class="tcd">Gestructureerde productbeschrijvingen automatisch gegenereerd op basis van specs + klantreviews. Obelink heeft 100.000+ producten — handmatig bijhouden is onmogelijk. AI genereert consistente, SEO-geoptimaliseerde content in meerdere talen.</div><div class="kpis"><span class="kpi">Content <em>· 100K+ producten</em></span><span class="kpi">SEO <em>· organisch +15%</em></span></div></div></div>
+          <div class="tli"><div class="tl-dot" style="background:var(--blue2)">4</div><div class="tlc" style="border-left:3px solid var(--blue2)"><div class="tcp" style="color:var(--blue2)">Maand 7–10 · Intelligentie</div><div class="tct">Aanbevelingsengine & personalisatie</div><div class="tcd">Op basis van 6 maanden verzamelde interactiedata bouw je een echte aanbevelingsengine. Niet rule-based maar machine learning op aankoophistorie, browsegedrag, seizoen en locatie. A/B-tests bewijzen impact.</div><div class="kpis"><span class="kpi">Cross-sell <em>· +18–23%</em></span><span class="kpi">Sessieduur <em>· +25%</em></span></div></div></div>
+          <div class="tli"><div class="tl-dot" style="background:var(--blue2)">5</div><div class="tlc" style="border-left:3px solid var(--blue2)"><div class="tcp" style="color:var(--blue2)">Maand 11–14 · Intelligentie</div><div class="tct">AI Klantenservice 24/7 + sentimentanalyse</div><div class="tcd">Uitbreiding van de chatbot naar volwaardige klantenservice: retourstatus, maatadvies, klachtenafhandeling. Sentimentanalyse op reviews en social media. Doel: 70% automatische afhandeling.</div><div class="kpis"><span class="kpi">Automatisering <em>· 70% target</em></span><span class="kpi">Response <em>· &lt;2 sec</em></span></div></div></div>
+          <div class="tli"><div class="tl-dot" style="background:var(--blue2)">6</div><div class="tlc" style="border-left:3px solid var(--blue2)"><div class="tcp" style="color:var(--blue2)">Maand 15–18 · Intelligentie</div><div class="tct">Dynamic pricing & voorraadoptimalisatie</div><div class="tcd">AI monitort concurrent-prijzen real-time en past Obelinks prijzen automatisch aan om de laagste-prijs-garantie te handhaven met maximale marge. Predictive demand forecasting voorkomt stockouts in het hoogseizoen.</div><div class="kpis"><span class="kpi">Marge <em>· +2–4%</em></span><span class="kpi">Stockouts <em>· −40%</em></span></div></div></div>
+          <div class="tli"><div class="tl-dot" style="background:var(--pur)">7</div><div class="tlc" style="border-left:3px solid var(--pur)"><div class="tcp" style="color:var(--pur)">Maand 19–24 · Eigen AI-Model</div><div class="tct">Dataverzameling & modelvoorbereiding</div><div class="tcd">Op dit punt heeft Obelink 18 maanden hoogwaardige, gestructureerde interactiedata verzameld. Start datacuratie voor fine-tuning: 500K+ gelabelde klantgesprekken. Selectie van open-source basismodel (LLaMA / Mistral).</div><div class="kpis"><span class="kpi">Trainingsdata <em>· 500K+ samples</em></span><span class="kpi">Model <em>· open-source base</em></span></div></div></div>
+          <div class="tli"><div class="tl-dot" style="background:var(--pur)">8</div><div class="tlc" style="border-left:3px solid var(--pur)"><div class="tcp" style="color:var(--pur)">Maand 25–30 · Eigen AI-Model</div><div class="tct">Fine-tuning, evaluatie & veiligheid</div><div class="tcd">Het open-source basismodel wordt fine-tuned op Obelink-specifieke data. RLHF met kampeerexperts als validators. Red-teaming voor veiligheid. A/B-test: eigen model vs. externe API. Target: eigen model presteert beter dan generieke alternatieven.</div><div class="kpis"><span class="kpi">Nauwkeurigheid <em>· &gt;91% target</em></span><span class="kpi">RLHF <em>· 10+ validators</em></span></div></div></div>
+          <div class="tli"><div class="tl-dot" style="background:var(--pur)">9</div><div class="tlc" style="border-left:3px solid var(--pur)"><div class="tcp" style="color:var(--pur)">Maand 31–36 · Eigen AI-Model</div><div class="tct">Volledige uitrol: Obelink AI in productie</div><div class="tcd">Het eigen Obelink-model draait volledig in eigen infrastructuur. Multilinguale uitrol in 8 talen voor heel Europa. Het model leert continu bij. Geen API-kosten meer, volledige controle, maximale datasoevereiniteit. Obelink is een AI-first retailer.</div><div class="kpis"><span class="kpi">Talen <em>· 8 (Europa)</em></span><span class="kpi">API-kosten <em>· €0</em></span><span class="kpi">Status <em>· AI-first</em></span></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 3 FASES -->
+    <section class="ssec" id="sfases">
+      <div class="shdr">
+        <div class="sico" style="background:var(--blue)">⚡</div>
+        <div class="sttl"><h2>3 Fases op een Rij</h2><p>Een gedetailleerd overzicht per fase — wat wordt gebouwd, waarom en welk effect het heeft.</p></div>
+      </div>
+      <div class="pg">
+        <div class="prow">
+          <div class="pleft" style="background:var(--ora)"><div class="pln">Fase 1</div><div class="plt">Fundament & Quick Wins</div><div class="pld">Maand 1 – 6</div><div class="plg">🎯 Bewijs leveren. AI aantoonbaar winstgevend maken. Data-infra klaar voor Fase 2.</div></div>
+          <div class="pright"><div class="pitems">
+            <div class="pit"><div class="pii">🗄️</div><div class="piti">Data-infrastructuur</div><div class="pitd">Datalakehouse opzetten. Alle datastromen (POS, web, reviews, support) samenvoegen en opschonen.</div><span class="pimp" style="background:var(--oraL);color:var(--ora)">Fundament voor alles</span></div>
+            <div class="pit"><div class="pii">💬</div><div class="piti">AI Chatbot (live)</div><div class="pitd">Domeinspecifieke chatbot voor productadvies via externe API. Meetbaar effect op conversie.</div><span class="pimp" style="background:var(--grnL);color:var(--grn2)">+8–12% conversie</span></div>
+            <div class="pit"><div class="pii">🔍</div><div class="piti">Semantisch zoeken</div><div class="pitd">Vector search vervangt keyword search. Klanten vinden het juiste product bij vage zoekvragen.</div><span class="pimp" style="background:var(--grnL);color:var(--grn2)">+15% vindbaarheid</span></div>
+            <div class="pit"><div class="pii">✍️</div><div class="piti">AI Productcontent</div><div class="pitd">100.000+ productbeschrijvingen automatisch gegenereerd, SEO-geoptimaliseerd, meertalig.</div><span class="pimp" style="background:var(--blueL);color:var(--blue)">Schaalbaar</span></div>
+            <div class="pit"><div class="pii">📊</div><div class="piti">Analytics dashboard</div><div class="pitd">Real-time inzicht in AI-impact. Welke aanbevelingen converteren? Welke vragen missen resultaat?</div><span class="pimp" style="background:var(--oraL);color:var(--ora)">Data voor fase 2</span></div>
+          </div></div>
+        </div>
+        <div class="prow">
+          <div class="pleft" style="background:var(--blue2)"><div class="pln">Fase 2</div><div class="plt">Intelligentie & Auto.</div><div class="pld">Maand 7 – 18</div><div class="plg">🎯 AI wordt de ruggengraat van operations. Data verzamelen voor eigen model.</div></div>
+          <div class="pright"><div class="pitems">
+            <div class="pit"><div class="pii">🎯</div><div class="piti">Aanbevelingsengine</div><div class="pitd">ML-gebaseerde personalisatie op aankoophistorie, browsegedrag en seizoen.</div><span class="pimp" style="background:var(--grnL);color:var(--grn2)">+18–23% cross-sell</span></div>
+            <div class="pit"><div class="pii">🤖</div><div class="piti">Klantenservice AI 24/7</div><div class="pitd">Retour, maatadvies, orderstatus — geautomatiseerd. 70% afhandeling zonder medewerker.</div><span class="pimp" style="background:var(--grnL);color:var(--grn2)">70% auto.</span></div>
+            <div class="pit"><div class="pii">💰</div><div class="piti">Dynamic pricing</div><div class="pitd">Real-time concurrentmonitoring. Laagste-prijs-garantie automatisch met maximale marge.</div><span class="pimp" style="background:var(--grnL);color:var(--grn2)">+2–4% marge</span></div>
+            <div class="pit"><div class="pii">📦</div><div class="piti">Predictive inventory</div><div class="pitd">Vraagvoorspelling per product, seizoen en regio. Stockouts voorkomen. Overstock minimaliseren.</div><span class="pimp" style="background:var(--blueL);color:var(--blue)">−40% stockouts</span></div>
+            <div class="pit"><div class="pii">🗃️</div><div class="piti">Trainingsdata opbouwen</div><div class="pitd">Alle interacties gelabeld en opgeslagen als trainingsdata voor het eigen model in Fase 3.</div><span class="pimp" style="background:var(--purL);color:var(--pur)">Voorbereiding F3</span></div>
+          </div></div>
+        </div>
+        <div class="prow">
+          <div class="pleft" style="background:var(--pur)"><div class="pln">Fase 3</div><div class="plt">Eigen Obelink AI-Model</div><div class="pld">Maand 19 – 36</div><div class="plg">🎯 Einddoel: eigen fine-tuned model op Obelinks eigen infrastructuur.</div></div>
+          <div class="pright"><div class="pitems">
+            <div class="pit"><div class="pii">🧹</div><div class="piti">Datacuratie (M19–22)</div><div class="pitd">500K+ gelabelde interacties schoonmaken en structureren als trainingsset voor fine-tuning.</div><span class="pimp" style="background:var(--purL);color:var(--pur)">Trainingsset gereed</span></div>
+            <div class="pit"><div class="pii">⚙️</div><div class="piti">Fine-tuning (M23–27)</div><div class="pitd">Open-source model (LLaMA 3 / Mistral) fine-tunen op Obelink-data. RLHF met kampeerexperts.</div><span class="pimp" style="background:var(--purL);color:var(--pur)">&gt;91% nauwkeurigheid</span></div>
+            <div class="pit"><div class="pii">🔴</div><div class="piti">Red-teaming & veiligheid</div><div class="pitd">Systematisch testen op hallucinations, bias en veiligheidsproblemen. Geen model live zonder validatie.</div><span class="pimp" style="background:var(--redL);color:var(--red)">Veiligheidsborging</span></div>
+            <div class="pit"><div class="pii">🚀</div><div class="piti">Uitrol (M28–32)</div><div class="pitd">Gefaseerde uitrol: intern → klantenservice → volledig productie. Rollback-plan aanwezig.</div><span class="pimp" style="background:var(--grnL);color:var(--grn2)">Live in productie</span></div>
+            <div class="pit"><div class="pii">🌍</div><div class="piti">8 talen (M33–36)</div><div class="pitd">NL, DE, FR, DA, SV, ES, IT, PL. Obelink bedient heel Europa vanuit één eigen model.</div><span class="pimp" style="background:var(--grnL);color:var(--grn2)">Europa-wide</span></div>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- FLYWHEEL -->
+    <section class="ssec" id="sfly">
+      <div class="shdr">
+        <div class="sico" style="background:var(--grn)">🔄</div>
+        <div class="sttl"><h2>Het Obelink Data Flywheel</h2><p>Waarom het eigen model steeds beter wordt naarmate meer klanten het gebruiken — een zichzelf versterkende cyclus.</p></div>
+      </div>
+      <div class="fw-wrap">
+        <div class="fw-vis">
+          <div class="fw-ring"></div>
+          <div class="fw-ctr"><div class="fci">🤖</div><div class="fct">Obelink<br>AI Model</div></div>
+          <div class="fw-node" style="top:2%;left:50%;transform:translateX(-50%)"><div class="fn-i">👤</div><div class="fn-t">Klant</div></div>
+          <div class="fw-node" style="top:20%;right:2%"><div class="fn-i">💬</div><div class="fn-t">Interactie</div></div>
+          <div class="fw-node" style="bottom:20%;right:2%"><div class="fn-i">📊</div><div class="fn-t">Data label</div></div>
+          <div class="fw-node" style="bottom:2%;left:50%;transform:translateX(-50%)"><div class="fn-i">🧠</div><div class="fn-t">Training</div></div>
+          <div class="fw-node" style="bottom:20%;left:2%"><div class="fn-i">⬆️</div><div class="fn-t">Beter model</div></div>
+          <div class="fw-node" style="top:20%;left:2%"><div class="fn-i">😊</div><div class="fn-t">Tevredenheid</div></div>
+        </div>
+        <div class="fl-list">
+          <div style="font-size:13px;font-weight:800;margin-bottom:4px">Hoe de cyclus werkt:</div>
+          <div class="fli"><div class="fl-n">1</div><div><div class="fl-tt">Klant stelt vraag</div><div class="fl-d">Honderdduizenden klanten per jaar gebruiken het AI-systeem voor advies, zoeken en klantenservice.</div></div></div>
+          <div class="fli"><div class="fl-n">2</div><div><div class="fl-tt">Interactie wordt gelabeld</div><div class="fl-d">Elke succesvolle interactie (aankoop, positieve rating) wordt automatisch gelabeld als trainingsdata.</div></div></div>
+          <div class="fli"><div class="fl-n">3</div><div><div class="fl-tt">Model wordt geüpdatet</div><div class="fl-d">Via periodieke fine-tuning leert het model van nieuwe data. Slechte antwoorden worden gecorrigeerd.</div></div></div>
+          <div class="fli"><div class="fl-n">4</div><div><div class="fl-tt">Beter model → meer tevredenheid</div><div class="fl-d">Betere antwoorden leiden tot hogere conversie en méér interacties. De cyclus versnelt.</div></div></div>
+          <div class="fli"><div class="fl-n">5</div><div><div class="fl-tt">Concurrenten kunnen niet volgen</div><div class="fl-d">Hoe meer data Obelink verzamelt, hoe groter de voorsprong. Externe AI heeft deze data nooit.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- MODEL ARCHITECTUUR -->
+    <section class="ssec" id="sarch">
+      <div class="shdr">
+        <div class="sico" style="background:var(--pur)">🧠</div>
+        <div class="sttl"><h2>Architectuur van het Eigen AI-Model</h2><p>Klik op een laag om de technische componenten te bekijken. Het model bestaat uit 4 lagen die op elkaar voortbouwen.</p></div>
+      </div>
+      <div class="arch">
+        <div class="al"><div class="al-hdr" style="background:var(--blueD)" onclick="toggleLayer(this)"><span class="al-ico">🗄️</span><span class="al-name">Laag 1: Datalaag (Fundament)</span><span class="al-tag">Fase 1</span><span style="color:rgba(255,255,255,.5);font-size:12px;margin-left:8px">▼</span></div><div class="al-body open"><div class="alc"><div class="alc-t">Datalakehouse</div><div class="alc-d">Centrale opslag van alle ruwe data: transacties, clicks, reviews, support-tickets. Bijv. Databricks op AWS/Azure.</div></div><div class="alc"><div class="alc-t">ETL Pipelines</div><div class="alc-d">Geautomatiseerde pipelines die data opschonen, transformeren en klaarstomen voor training en inference.</div></div><div class="alc"><div class="alc-t">Vector Database</div><div class="alc-d">Productbeschrijvingen en FAQ's als embeddings voor semantisch zoeken (bijv. Pinecone, Weaviate).</div></div><div class="alc"><div class="alc-t">Data Governance</div><div class="alc-d">GDPR-compliant datamanagement. Klantdata geanonimiseerd voor training. Privacy by design.</div></div></div></div>
+        <div class="al"><div class="al-hdr" style="background:var(--blue)" onclick="toggleLayer(this)"><span class="al-ico">⚙️</span><span class="al-name">Laag 2: Modellaag (Het Brein)</span><span class="al-tag">Fase 3</span><span style="color:rgba(255,255,255,.5);font-size:12px;margin-left:8px">▼</span></div><div class="al-body"><div class="alc"><div class="alc-t">Basismodel (Open-source)</div><div class="alc-d">LLaMA 3.1 70B of Mistral Large als startpunt. Open-source = geen licentiekosten, volledig aanpasbaar.</div></div><div class="alc"><div class="alc-t">Fine-tuning (LoRA / QLoRA)</div><div class="alc-d">Efficiënte fine-tuning: 90% minder GPU-gebruik dan volledig hertrainen. Haalbaar met beperkt budget.</div></div><div class="alc"><div class="alc-t">RLHF</div><div class="alc-d">Reinforcement Learning from Human Feedback: kampeerexperts beoordelen modelantwoorden.</div></div><div class="alc"><div class="alc-t">RAG (Retrieval-Augmented)</div><div class="alc-d">Model combineert kennis met real-time productdata uit de vector database. Altijd actueel antwoord.</div></div></div></div>
+        <div class="al"><div class="al-hdr" style="background:var(--blue2)" onclick="toggleLayer(this)"><span class="al-ico">🔌</span><span class="al-name">Laag 3: Integratielaag (Verbinding)</span><span class="al-tag">Fase 2–3</span><span style="color:rgba(255,255,255,.5);font-size:12px;margin-left:8px">▼</span></div><div class="al-body"><div class="alc"><div class="alc-t">API Gateway</div><div class="alc-d">Centrale API voor website, app, klantenservice en intern gebruik. Rate-limited en gemonitord.</div></div><div class="alc"><div class="alc-t">Microservices</div><div class="alc-d">Chatbot, aanbevelingen, pricing en inventory als aparte services. Schaalbaar en onderhoudbaar.</div></div><div class="alc"><div class="alc-t">Monitoring & Observability</div><div class="alc-d">Real-time monitoring van latency, hallucinaties en klanttevredenheid. Alert bij degradatie.</div></div><div class="alc"><div class="alc-t">Fallback mechanisme</div><div class="alc-d">Als eigen model faalt, automatische fallback naar externe API (Anthropic). Geen downtime.</div></div></div></div>
+        <div class="al"><div class="al-hdr" style="background:var(--pur)" onclick="toggleLayer(this)"><span class="al-ico">🖥️</span><span class="al-name">Laag 4: Presentatielaag (Klantervaring)</span><span class="al-tag">Fase 1–3</span><span style="color:rgba(255,255,255,.5);font-size:12px;margin-left:8px">▼</span></div><div class="al-body"><div class="alc"><div class="alc-t">AI Chatbot (web + app)</div><div class="alc-d">Productadvies, maatadvies, reisplanning — alles in één interface. Dit is de chatbot op deze pagina.</div></div><div class="alc"><div class="alc-t">Semantische zoekbalk</div><div class="alc-d">"Voortent voor gezin met hond bij regen" → directe, relevante resultaten zonder exacte trefwoorden.</div></div><div class="alc"><div class="alc-t">Gepersonaliseerde homepage</div><div class="alc-d">Elke bezoeker ziet een unieke homepage op basis van browse- en aankoophistorie. AI-gestuurd.</div></div><div class="alc"><div class="alc-t">Medewerker-assistent</div><div class="alc-d">Intern tool voor de Megastore: AI helpt bij productkennis, voorraadinzicht en klantadvies.</div></div></div></div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ROI -->
+    <section class="ssec" id="sroi">
+      <div class="shdr">
+        <div class="sico" style="background:var(--grn)">📈</div>
+        <div class="sttl"><h2>Verwachte Impact & ROI</h2><p>Concrete, meetbare doelstellingen per fase — gebaseerd op benchmarks van vergelijkbare retailers met AI-implementaties.</p></div>
+      </div>
+      <div class="roi-grid">
+        <div class="roic" style="border-top:4px solid var(--ora)"><div class="ri">🔍</div><div class="rm" style="color:var(--ora)">+15%</div><div class="rl">Organisch zoekverkeer</div><div class="rd">AI-gegenereerde SEO-content voor 100K+ producten in meerdere talen.</div><span class="rf" style="background:var(--oraL);color:var(--ora)">Fase 1 · M4–6</span></div>
+        <div class="roic" style="border-top:4px solid var(--grn)"><div class="ri">💳</div><div class="rm" style="color:var(--grn)">+8–12%</div><div class="rl">Conversieratio chatbot</div><div class="rd">Bezoekers die AI-advies ontvangen converteren significant beter. Direct meetbaar.</div><span class="rf" style="background:var(--grnL);color:var(--grn2)">Fase 1 · M2–3</span></div>
+        <div class="roic" style="border-top:4px solid var(--blue)"><div class="ri">🛒</div><div class="rm" style="color:var(--blue)">+18–23%</div><div class="rl">Cross-sell waarde</div><div class="rd">Aanbevelingsengine verhoogt gemiddelde orderwaarde. Benchmark: Bol.com +22%.</div><span class="rf" style="background:var(--blueL);color:var(--blue)">Fase 2 · M7–10</span></div>
+        <div class="roic" style="border-top:4px solid var(--blue2)"><div class="ri">🤖</div><div class="rm" style="color:var(--blue2)">70%</div><div class="rl">Klantenservice auto.</div><div class="rd">70% van alle support-tickets volledig automatisch afgehandeld.</div><span class="rf" style="background:var(--blueL);color:var(--blue)">Fase 2 · M11–14</span></div>
+        <div class="roic" style="border-top:4px solid var(--grn2)"><div class="ri">💰</div><div class="rm" style="color:var(--grn2)">+2–4%</div><div class="rl">Brutomarge-verbetering</div><div class="rd">Dynamic pricing AI met betere margeoptimalisatie dan handmatige prijsstelling.</div><span class="rf" style="background:var(--grnL);color:var(--grn2)">Fase 2 · M15–18</span></div>
+        <div class="roic" style="border-top:4px solid var(--pur)"><div class="ri">🚫</div><div class="rm" style="color:var(--pur)">€0</div><div class="rl">API-kosten (Fase 3)</div><div class="rd">Eigen model draait in eigen infrastructuur. Geen maandelijkse API-rekening meer.</div><span class="rf" style="background:var(--purL);color:var(--pur)">Fase 3 · M31–36</span></div>
+      </div>
+      <div class="bchart">
+        <div class="bct">📊 Cumulatieve AI-volwassenheid per mijlpaal</div>
+        <div class="bcr"><div class="bctop"><span class="bcl">Data-infrastructuur gereed</span><span class="bcv" style="color:var(--ora)">M1 · Fundament</span></div><div class="bck"><div class="bcf" style="width:10%;background:var(--ora)"></div></div></div>
+        <div class="bcr"><div class="bctop"><span class="bcl">Chatbot + semantisch zoeken live</span><span class="bcv" style="color:var(--ora)">M3 · Fase 1</span></div><div class="bck"><div class="bcf" style="width:28%;background:var(--ora)"></div></div></div>
+        <div class="bcr"><div class="bctop"><span class="bcl">AI-content + analytics dashboard live</span><span class="bcv" style="color:var(--ora)">M6 · Fase 1 ✓</span></div><div class="bck"><div class="bcf" style="width:38%;background:linear-gradient(90deg,var(--ora),var(--blue2))"></div></div></div>
+        <div class="bcr"><div class="bctop"><span class="bcl">Aanbevelingen + service + pricing geautomatiseerd</span><span class="bcv" style="color:var(--blue2)">M18 · Fase 2 ✓</span></div><div class="bck"><div class="bcf" style="width:65%;background:linear-gradient(90deg,var(--blue2),var(--pur))"></div></div></div>
+        <div class="bcr"><div class="bctop"><span class="bcl">Eigen model in fine-tuning</span><span class="bcv" style="color:var(--pur)">M24 · Fase 3 →</span></div><div class="bck"><div class="bcf" style="width:78%;background:var(--pur)"></div></div></div>
+        <div class="bcr"><div class="bctop"><span class="bcl">Eigen Obelink AI-model volledig in productie</span><span class="bcv" style="color:var(--pur)">M36 · Eindpunt 🏆</span></div><div class="bck"><div class="bcf" style="width:100%;background:linear-gradient(90deg,var(--pur),var(--grn))"></div></div></div>
+      </div>
+    </section>
+
+    <!-- CONVICTION -->
+    <div class="conv">
+      <div class="ctag">Het Eindpunt · Maand 36</div>
+      <h2>Obelink wordt Europa's<br>eerste AI-native kampeerretailer</h2>
+      <p>Geen generiek AI-model dat vandaag voor Obelink werkt en morgen voor een concurrent. Een volledig eigen model, getraind op 65 jaar kampeerkennis, dat elke dag slimmer wordt. Dát is het competitieve voordeel dat niemand kan kopiëren.</p>
+      <div class="cpills">
+        <span class="cpill">🔒 Privacy-first</span>
+        <span class="cpill">€0 API-kosten</span>
+        <span class="cpill">🌍 8 Europese talen</span>
+        <span class="cpill">🔄 Continu lerend</span>
+        <span class="cpill">🏕️ Domeinspecifiek</span>
+        <span class="cpill">⚡ Onkopieerbaar voordeel</span>
+      </div>
+      <div class="cauthor">
+        <div class="cav">👨‍💻</div>
+        <div><div class="can">AI Specialist Sollicitant</div><div class="car">Sollicitatie Demo · Obelink Winterswijk · 2025</div></div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /page-strat -->
+
+<!-- ════ AI CHAT OVERLAY ════ -->
+<div id="chat-overlay">
+  <div id="chat-win">
+    <div id="cwh">
+      <div id="cwav">⛺</div>
+      <div>
+        <div class="cwn">Obelink AI Voortentexpert</div>
+        <div class="cws"><span class="dlive"></span>Online — direct persoonlijk advies</div>
+      </div>
+      <button id="cwclose" onclick="closeChat()">✕</button>
+    </div>
+    <div id="cwcaps">
+      <span class="cap" onclick="qa('Welk type voortent past bij mij?')">🎯 Advies op maat</span>
+      <span class="cap" onclick="qa('Hoe meet ik mijn omloopmaat?')">📏 Omloopmaat</span>
+      <span class="cap" onclick="qa('Wat zijn de verschillen tussen opblaasbaar en stokken?')">⚖️ Vergelijken</span>
+      <span class="cap" onclick="qa('Ik heb een budget van €800, wat raad je aan?')">💶 Budget advies</span>
+      <span class="cap" onclick="qa('Welke voortent past op mijn camper?')">🚐 Camper</span>
+      <span class="cap" onclick="qa('Welke voortent is het lichtst?')">🎒 Ultralicht</span>
+    </div>
+    <div id="cwmsgs">
+      <div id="cwwel">
+        <div class="wi">⛺</div>
+        <h3>Hoi, ik ben de Obelink AI Expert!</h3>
+        <p>Ik ken het volledige voortentassortiment en help je in 60 seconden de perfecte keuze maken.</p>
+        <button class="wstart" onclick="startChat()">Start adviesgesprek ›</button>
+        <div class="wqbtns">
+          <button class="wq" onclick="qa(this.innerText)">Welke voortent past bij mij?</button>
+          <button class="wq" onclick="qa(this.innerText)">Opblaasbaar of stokken?</button>
+          <button class="wq" onclick="qa(this.innerText)">Budget €600–€900</button>
+          <button class="wq" onclick="qa(this.innerText)">Voortent voor camper</button>
+          <button class="wq" onclick="qa(this.innerText)">Lichtste voortent</button>
+          <button class="wq" onclick="qa(this.innerText)">4-seizoenen voortent</button>
+        </div>
+      </div>
+    </div>
+    <div id="cwq"></div>
+    <div id="cwinput">
+      <input id="cwi" type="text" placeholder="Stel je vraag..." onkeydown="if(event.key==='Enter')sendChat()">
+      <button id="cws" onclick="sendChat()">↑</button>
+    </div>
+  </div>
+  <div id="chat-bubble" onclick="toggleChat()">
+    <span class="cbi">💬</span>
+    <span class="cbp">AI</span>
+  </div>
+</div>
+
+<script>
+// ─── DATA ──────────────────────────────────────────────────────────
+const PRODS=[
+  {id:1,merk:"Obelink",naam:"Obelink Monaco 320 Easy Air",type:"Opblaasbare voortent",prijs:849,oud:1199,emoji:"💨",bdg:"sale",bdgl:"−29%",score:4.3,rev:187,diepte:320,gew:17,opzet:10,air:true,seizoen:"Reizen",gesch:"Caravan / Camper",pros:["Snel op via 1 ventiel (10 min)","Compact & lichtgewicht op reis","Eigen merk = laagste prijs"],tags:["opblaasbaar","caravan","camper","reizen"]},
+  {id:2,merk:"Dometic",naam:"Dometic Rally Air Pro 260 S",type:"Opblaasbare reisvoortent",prijs:849,oud:null,emoji:"⛺",bdg:"best",bdgl:"BESTSELLER",score:4.6,rev:312,diepte:260,gew:14,opzet:8,air:true,seizoen:"Reizen",gesch:"Caravan / Camper",pros:["Nr.1 verkochte opblaasvoortent","Lichtste model: 14 kg","Uitbreidbaar met annex"],tags:["opblaasbaar","caravan","camper","reizen","dometic"]},
+  {id:3,merk:"Isabella",naam:"Isabella Air Cirrus Coast 400",type:"Opblaasbare luxevoortent",prijs:1599,oud:null,emoji:"👑",bdg:"top",bdgl:"PREMIUM",score:4.8,rev:224,diepte:400,gew:19,opzet:20,air:true,seizoen:"Seizoen",gesch:"Caravan",pros:["Isacryl = NOOIT condensvorming","Verticale wanden = maximale ruimte","Premium afwerking"],tags:["opblaasbaar","caravan","seizoen","premium","isabella"]},
+  {id:4,merk:"Obelink",naam:"Obelink Palma 280 Easy Air",type:"Opblaasbare voortent",prijs:649,oud:799,emoji:"🌴",bdg:"sale",bdgl:"−19%",score:4.1,rev:98,diepte:280,gew:16,opzet:10,air:true,seizoen:"Reizen",gesch:"Caravan / Camper",pros:["Incl. opblaasbaar grondzeil","Betaalbaarste opblaasoptie","Goede prijs-kwaliteit"],tags:["opblaasbaar","caravan","camper","budget","reizen"]},
+  {id:5,merk:"Dometic",naam:"Dometic Ace Air Pro 400 S",type:"Opblaasbare seizoensvoortent",prijs:1099,oud:null,emoji:"🏠",bdg:"new",bdgl:"NIEUW 2025",score:4.6,rev:77,diepte:400,gew:22,opzet:12,air:true,seizoen:"Seizoen",gesch:"Caravan / Camper",pros:["Ruime 400 cm diepte","3 ingangen voor gezin","Panoramische raampartijen"],tags:["opblaasbaar","caravan","camper","seizoen","dometic"]},
+  {id:6,merk:"Brand",naam:"Brand Vario Plus 260 Aluminium",type:"Caravanvoortent op stokken",prijs:699,oud:null,emoji:"🏡",bdg:null,bdgl:null,score:4.3,rev:201,diepte:260,gew:24,opzet:45,air:false,seizoen:"Seizoen",gesch:"Caravan",pros:["Bewezen TenCate All Season doek","Betaalbaarste seizoensoptie","Solide aluminium frame"],tags:["stokken","caravan","seizoen","brand"]},
+  {id:7,merk:"Walker",naam:"Walker Active Air 330",type:"Opblaasbare NL-voortent",prijs:999,oud:null,emoji:"🇳🇱",bdg:"air",bdgl:"HANDGEMAAKT NL",score:4.5,rev:89,diepte:330,gew:21,opzet:12,air:true,seizoen:"Seizoen",gesch:"Caravan",pros:["Handgemaakt in Deurne, Nederland","TenCate kwaliteitsmateriaal","Gegarandeerde pasvorm"],tags:["opblaasbaar","caravan","seizoen","walker"]},
+  {id:8,merk:"Dometic",naam:"Dometic Grande Air All-Season 300",type:"4-seizoenen voortent",prijs:1449,oud:null,emoji:"❄️",bdg:"top",bdgl:"4 SEIZOENEN",score:4.7,rev:66,diepte:300,gew:28,opzet:15,air:true,seizoen:"4-seizoenen",gesch:"Caravan / Camper",pros:["Heel het jaar buiten laten staan","Condensvrij versterkt dak","Stormbestendig"],tags:["opblaasbaar","caravan","camper","4-seizoenen","dometic"]},
+  {id:9,merk:"Obelink",naam:"Obelink Mobil 320 Easy Air",type:"Opblaasbare campertent",prijs:749,oud:null,emoji:"🚐",bdg:null,bdgl:null,score:4.2,rev:134,diepte:320,gew:18,opzet:10,air:true,seizoen:"Reizen",gesch:"Camper",pros:["Speciaal voor camper & bus","Snel op en af te breken","Compact opbergruimte"],tags:["opblaasbaar","camper","reizen"]},
+  {id:10,merk:"Isabella",naam:"Isabella Carbon Rally 340 CarbonX",type:"Reisvoortent carbon frame",prijs:1199,oud:null,emoji:"✨",bdg:"top",bdgl:"LICHTSTE: 11KG",score:4.6,rev:118,diepte:340,gew:11,opzet:25,air:false,seizoen:"Reizen",gesch:"Caravan",pros:["Slechts 11 kg — absoluut lichtst","Isacryl = nooit condens","Scandinavisch design"],tags:["carbon","caravan","reizen","ultralicht","isabella"]},
+  {id:11,merk:"Obelink",naam:"Obelink Saba 360 Lichtgewicht",type:"Lichtgewicht deeltent",prijs:429,oud:549,emoji:"🌿",bdg:"sale",bdgl:"−22%",score:4.0,rev:76,diepte:200,gew:10,opzet:15,air:false,seizoen:"Reizen",gesch:"Caravan / Camper",pros:["Ideaal voor rondtrekkers","Lichte stalen stokken","Laagste instapprijs"],tags:["stokken","caravan","camper","budget","reizen"]},
+  {id:12,merk:"Obelink",naam:"Hypercamp Casa Grande 300 PVC",type:"4-seizoenen PVC voortent",prijs:1099,oud:null,emoji:"🏰",bdg:null,bdgl:null,score:4.4,rev:154,diepte:300,gew:36,opzet:60,air:false,seizoen:"4-seizoenen",gesch:"Caravan",pros:["PVC 650gr/m² = meest weerbestendig","36mm stokken extra stormbestendig","Kan heel de winter blijven staan"],tags:["stokken","caravan","4-seizoenen","winter"]}
+];
+
+const SYSTEM=`Je bent de Obelink AI Voortentexpert op obelink.nl. Obelink is Europa's grootste kampeerspecialist (Winterswijk, opgericht 1959, 65 jaar expertise).
+
+OBELINK BELOFTES:
+- Laagste-prijs-garantie: altijd de laagste prijs, anders verschil terug
+- Gratis verzending v.a. €50,-
+- 72.500 m² Megastore Winterswijk
+- 30 dagen bedenktijd
+
+MERKEN:
+- Obelink (eigen merk, beste prijs/kwaliteit, laagste prijs garantie)
+- Isabella (premium, Isacryl doek = NOOIT condens, Scandinavisch design)
+- Dometic (AirFrame technologie, beste opblaasframes, 1 ventiel = klaar)
+- Brand (TenCate All Season doek, betaalbare seizoensopties)
+- Walker (handgemaakt in Deurne Nederland, TenCate materiaal)
+- Hypercamp (PVC opties, meest stormbestendig)
+
+ASSORTIMENT VOORTENTEN (actueel):
+1. Obelink Monaco 320 Easy Air — €849 (was €1199, -29%) — opblaas — 320cm diepte — 17kg — caravan/camper — 10min opzet
+2. Dometic Rally Air Pro 260 S — €849 — BESTSELLER — AirFrame (1 ventiel) — 260cm — 14kg — reizen — caravan/camper
+3. Isabella Air Cirrus Coast 400 — €1599 — Isacryl — 400cm — 19kg — seizoen — NOOIT condens
+4. Obelink Palma 280 Easy Air — €649 (was €799, -19%) — incl grondzeil — 280cm — 16kg — caravan/camper
+5. Dometic Ace Air Pro 400 S — €1099 — 400cm — 3 ingangen — nieuw 2025 — seizoen
+6. Brand Vario Plus 260 Aluminium — €699 — STOKKEN — TenCate — seizoen — 260cm
+7. Walker Active Air 330 — €999 — handgemaakt NL Deurne — TenCate — 330cm — caravan
+8. Dometic Grande Air All-Season 300 — €1449 — 4-SEIZOENEN — heel het jaar buiten — waterproof versterkt dak
+9. Obelink Mobil 320 Easy Air — €749 — CAMPER/BUS — 320cm — 18kg — speciaal voor camper
+10. Isabella Carbon Rally 340 CarbonX — €1199 — LICHTSTE 11kg — carbon frame — reizen — ook NOOIT condens
+11. Obelink Saba 360 — €429 (was €549, -22%) — deeltent — 10kg — budget — stalen stokken
+12. Hypercamp Casa Grande 300 PVC — €1099 — PVC — 4-SEIZOENEN — 36mm stokken — winterbestendig
+
+KEUZEHULP:
+- Rondtrekken / 1-2 weken → Dometic Rally Air Pro 260 (14kg, snel op) of Obelink Monaco 320 (-29% nu)
+- Gezin / 3-6 weken vaste plek → Dometic Ace 400 (3 ingangen) of Isabella Cirrus Coast 400 (premium, geen condens)
+- Ultralicht / backpacking stijl → Isabella Carbon Rally 340 (11kg! ook geen condens)
+- Budget t/m €700 → Obelink Palma 280 (incl grondzeil!) of Brand Vario Plus (stokken, bewezen doek)
+- Camper/bus → Obelink Mobil 320 (speciaal gebouwd voor camper)
+- Heel het jaar / winter → Dometic Grande Air All-Season 300 of Hypercamp Casa Grande PVC
+- Nooit condens → Isabella (Isacryl doek, uniek in de markt)
+- Premium zonder compromis → Isabella Air Cirrus Coast 400
+
+OMLOOPMAAT UITLEG:
+Meet van de grond, via de binnenkant van de volledige caravanrail (horizontale rail), terug tot de grond. Dit is de omloopmaat. De voortent moet deze maat hebben of iets groter. Bij een rechte rail: meet de binnenkant van de rail.
+
+GEDRAGSREGELS:
+- Stel max 2 vragen tegelijk als je meer info nodig hebt
+- Geef altijd een concrete top-aanbeveling met prijs
+- Noem altijd de laagste-prijs-garantie als prijs een zorg is
+- Enthousiastisch maar niet overdreven salesy
+- Max 5 zinnen per antwoord tenzij uitleg gevraagd
+- Vergelijkingsvragen: geef voor- en nadelen helder met pros/cons
+- Bij productdetailvragen: geef alle specs die je kent
+- Je kunt producten in winkelwagen simuleren door te zeggen: "Ik heb [product] voor je klaargezet!"`;
+
+// ─── PRODUCT RENDERING ───────────────────────────────────────────────
+function st(s){let h='';for(let i=1;i<=5;i++)h+=`<span class="${i<=Math.round(s)?'s-on':'s-off'}">★</span>`;return h;}
+function renderProds(list){
+  document.getElementById('pcnt').textContent=list.length+'+';
+  document.getElementById('prod-grid').innerHTML=list.map(p=>`
+    <div class="pcard">
+      <div class="pcimg">
+        ${p.bdg?`<div class="pcb"><span class="bdg ${p.bdg}">${p.bdgl}</span></div>`:''}
+        ${p.emoji}
+        <div class="pcwish" onclick="wish(event,${p.id})">🤍</div>
+      </div>
+      <div class="pcbody">
+        <div class="pcmerk">${p.merk}</div>
+        <div class="pcname">${p.naam}</div>
+        <div class="pctype">${p.type}</div>
+        <div class="pcstars">${st(p.score)}<span class="pcrev">&nbsp;${p.score} (${p.rev})</span></div>
+        <div class="pcspecs">
+          <span class="sptag">⬌ ${p.diepte}cm</span>
+          <span class="sptag">⚖️ ${p.gew}kg</span>
+          <span class="sptag">⏱ ${p.opzet}min</span>
+          <span class="sptag">${p.air?'💨 Opblaas':'🔩 Stokken'}</span>
+        </div>
+        <div class="pcpros">
+          ${p.pros.slice(0,2).map(v=>`<div class="pcpro"><span class="ck">✓</span>${v}</div>`).join('')}
+        </div>
+        <div class="pcprice-wrap">
+          ${p.oud?`<div class="pcold">Adviesprijs €${p.oud.toLocaleString('nl-NL')},-</div>`:''}
+          <div class="pcprice"><sup>€</sup>${p.prijs.toLocaleString('nl-NL')}<sub style="font-size:12px">,-</sub></div>
+          ${p.oud?`<div class="pcsave">Je bespaart €${(p.oud-p.prijs).toLocaleString('nl-NL')},-</div>`:''}
+        </div>
+        <div class="pcbtns">
+          <button class="pccart" onclick="addCart(${p.id})">In winkelwagen</button>
+          <button class="pcdet" onclick="det(${p.id})">Details</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+renderProds(PRODS);
+
+// ─── FILTER / VIEW ───────────────────────────────────────────────────
+function filt(v,btn){
+  document.querySelectorAll('.ftag').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  const m={Opblaasbaar:p=>p.air,Caravan:p=>p.tags.includes('caravan'),Camper:p=>p.tags.includes('camper'),Reizen:p=>p.seizoen==='Reizen',Seizoen:p=>p.seizoen==='Seizoen','4-seizoenen':p=>p.seizoen==='4-seizoenen',Aanbieding:p=>!!p.oud};
+  renderProds(v==='Alle'?PRODS:PRODS.filter(m[v]||(_=>true)));
+}
+function setView(v,btn){
+  document.querySelectorAll('.vtb button').forEach(b=>b.classList.remove('on'));btn.classList.add('on');
+  const g=document.getElementById('prod-grid');
+  v==='l'?g.classList.add('lv'):g.classList.remove('lv');
+}
+
+// ─── CART ────────────────────────────────────────────────────────────
+let cn=0;
+function addCart(id){
+  cn++;document.getElementById('cart-n').textContent=cn;
+  const p=PRODS.find(x=>x.id===id);
+  const cards=document.querySelectorAll('.pccart');
+  cards.forEach(c=>{if(c.closest('.pcard')?.innerHTML.includes(p.naam)){c.textContent='✓ Toegevoegd!';c.style.background='var(--grn2)';setTimeout(()=>{c.textContent='In winkelwagen';c.style.background='';},1800);}});
+}
+function wish(e,id){e.stopPropagation();e.target.textContent=e.target.textContent==='🤍'?'❤️':'🤍';}
+function det(id){const p=PRODS.find(x=>x.id===id);openChat();setTimeout(()=>qa('Vertel me alles over de '+p.naam+', inclusief alle specs en wat dit model uniek maakt.'),400);}
+function srch(){const v=document.getElementById('search-inp').value.trim();if(v){openChat();setTimeout(()=>qa('Ik zoek: '+v),300);}}
+
+// ─── PAGE SWITCH ─────────────────────────────────────────────────────
+function showPage(key,tab){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.pg-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+key).classList.add('active');
+  tab.classList.add('active');
+  window.scrollTo(0,0);
+}
+
+// ─── STRAT NAV ───────────────────────────────────────────────────────
+document.querySelectorAll('.snl[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const el=document.getElementById(a.getAttribute('href').slice(1));
+    if(el) el.scrollIntoView({behavior:'smooth'});
+    document.querySelectorAll('.snl').forEach(n=>n.classList.remove('on'));
+    a.classList.add('on');
+  });
+});
+window.addEventListener('scroll',()=>{
+  const secs=document.querySelectorAll('.ssec[id]');
+  let cur='';
+  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-110)cur=s.id;});
+  document.querySelectorAll('.snl').forEach(n=>{n.classList.toggle('on',n.getAttribute('href')==='#'+cur);});
+});
+
+// ─── ARCH TOGGLE ─────────────────────────────────────────────────────
+function toggleLayer(hdr){hdr.nextElementSibling.classList.toggle('open');}
+
+// ─── CHAT ────────────────────────────────────────────────────────────
+let chatOpen=false,chatStarted=false,busy=false,hist=[];
+function openChat(){if(!chatOpen)toggleChat();}
+function closeChat(){if(chatOpen)toggleChat();}
+function toggleChat(){
+  chatOpen=!chatOpen;
+  const w=document.getElementById('chat-win');
+  chatOpen?w.classList.add('open'):w.classList.remove('open');
+}
+
+function startChat(){
+  chatStarted=true;
+  document.getElementById('cwwel').style.display='none';
+  document.getElementById('cwinput').style.display='flex';
+  document.getElementById('cwq').style.display='flex';
+  busy=true;showTyp();
+  callAI([{role:'user',content:'Hoi! Stel jezelf kort voor als Obelink AI expert en stel meteen 2 slimme vragen om de beste voortent te vinden.'}])
+    .then(r=>{hideTyp();addBot(r);busy=false;setQR(['Caravan','Camper','Kampeerbus','Ik weet het nog niet']);})
+    .catch(()=>{hideTyp();addBot('Er ging iets mis. Probeer het opnieuw.');busy=false;});
+}
+
+function qa(txt){
+  if(!chatOpen)openChat();
+  if(!chatStarted){
+    chatStarted=true;
+    document.getElementById('cwwel').style.display='none';
+    document.getElementById('cwinput').style.display='flex';
+    document.getElementById('cwq').style.display='flex';
+  }
+  sendTxt(txt);
+}
+
+function sendChat(){
+  const inp=document.getElementById('cwi');
+  const v=inp.value.trim();
+  if(!v||busy)return;
+  inp.value='';sendTxt(v);
+}
+
+async function sendTxt(txt){
+  addUsr(txt);hist.push({role:'user',content:txt});
+  busy=true;document.getElementById('cws').disabled=true;showTyp();
+  try{
+    const r=await callAI(hist);
+    hideTyp();hist.push({role:'assistant',content:r});addBot(r);
+    // Contextual quick replies
+    const tl=txt.toLowerCase();
+    if(tl.includes('budget')||tl.includes('prijs')||tl.includes('goedkoop'))
+      setQR(['Tot €600','€600–€900','€900–€1200','Meer dan €1200']);
+    else if(tl.includes('caravan'))
+      setQR(['Rondtrekken','Vaste seizoenplek','4-seizoenen','Hoelang per jaar?']);
+    else if(tl.includes('camper')||tl.includes('bus'))
+      setQR(['Korte reizen','Langere periodes','Omloopmaat weten','Hoe meten?']);
+    else if(r.toLowerCase().includes('euro')||r.toLowerCase().includes('prijs'))
+      setQR(['Meer info','Alternatief?','Laagste prijs garantie?','In winkelwagen']);
+    else
+      setQR(['Vertel meer','Nog een optie?','Hoe maten meten?','Wat is mijn omloopmaat?']);
+  }catch(e){hideTyp();addBot('Oeps, er ging iets mis. Probeer het opnieuw.');}
+  busy=false;document.getElementById('cws').disabled=false;
+}
+
+async function callAI(msgs){
+  const r=await fetch('https://api.anthropic.com/v1/messages',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:SYSTEM,messages:msgs})
+  });
+  const d=await r.json();
+  return d.content?.map(b=>b.text||'').join('')||'Er ging iets mis.';
+}
+
+function addUsr(t){
+  const m=document.getElementById('cwmsgs');
+  const d=document.createElement('div');d.className='mrow u';
+  d.innerHTML=`<div class="bub usr">${esc(t)}</div>`;
+  m.appendChild(d);m.scrollTop=m.scrollHeight;
+}
+function addBot(t){
+  const m=document.getElementById('cwmsgs');
+  const d=document.createElement('div');d.className='mrow';
+  d.innerHTML=`<div class="mav">⛺</div><div class="bub bot">${esc(t)}</div>`;
+  m.appendChild(d);m.scrollTop=m.scrollHeight;
+}
+let typEl=null;
+function showTyp(){
+  const m=document.getElementById('cwmsgs');
+  typEl=document.createElement('div');typEl.className='mrow';typEl.id='typind';
+  typEl.innerHTML=`<div class="mav">⛺</div><div class="typbub"><div class="tdot"></div><div class="tdot"></div><div class="tdot"></div></div>`;
+  m.appendChild(typEl);m.scrollTop=m.scrollHeight;
+}
+function hideTyp(){if(typEl){typEl.remove();typEl=null;}}
+function setQR(arr){
+  const q=document.getElementById('cwq');
+  q.innerHTML=arr.map(x=>`<button class="qr" onclick="qa('${x}')">${x}</button>`).join('');
+}
+function esc(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');}
+</script>
+</body>
+</html>
